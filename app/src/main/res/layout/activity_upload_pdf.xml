@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b"
+    tools:context=".UploadPDF">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload the PDF"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="35sp"
+        android:layout_marginTop="100dp"
+        android:textColor="@color/black"
+        android:id="@+id/text_pdf"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_name"
+        style="@style/Widget.Material3.AutoCompleteTextView.FilledBox"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:layout_below="@+id/text_pdf"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/border"
+            android:hint="Enter PDF File Name"
+            android:textColor="#FF9800"
+            android:textColorHint="@color/black"
+            android:textSize="22sp" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/black"
+        android:text="Upload PDF"
+        android:textColor="@color/lightBlue"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:id="@+id/upload_btn"
+        android:padding="10dp" />
+
+
+
+
+
+</RelativeLayout>
